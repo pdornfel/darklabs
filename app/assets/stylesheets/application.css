@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+
+#coming-soon{
+  margin: auto;
+  width: 350px;
+  padding-top: 250px;
+  font-size: 40px;
+}
