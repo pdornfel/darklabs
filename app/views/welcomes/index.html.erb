@@ -3,7 +3,7 @@
   <div class="cbp-af-header">
     <div class="cbp-af-inner">
       <h1>DarkLabs</h1>
-      <nav>
+      <nav class='top-nav'>
         <a href="#">About</a>
         <a href="#">Careers</a>
         <a href="#">Contact</a>
@@ -14,22 +14,22 @@
 
   <header class="clearfix">
     <span>DarkLabs <span class="bp-icon bp-icon-about" data-content="The DarkLabs group is dedicated to makinig your app come to life."></span></span>
-    <nav>
+    <span>
       <%= link_to "", root_url, class: "bp-icon bp-icon-prev" %>
       <!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
       <a href="https://twitter.com/paulydiesel1" class="bp-icon bp-icon-drop" data-info="twitter", target='_blank'><span></span></a>
-      <a href="https://medium.com/@paulydiesel1" class="bp-icon bp-icon-archive" data-info="blog", target='_blank'><span>Go to blog</span></a>
-    </nav>
+      <a href="https://medium.com/@paulydiesel1" class="bp-icon bp-icon-archive" data-info="blog", target='_blank'><span></span></a>
+    </span>
   </header> 
   <div class="main">
     <section>
       <div><p>DarkLabs provides full stack web development. We will help you take your idea to market. From architecture and design, to implementation, deployment and maintenance - DarkLabs will do it all.</p></div>
     </section>
-    <section style='height:200px'>
+    <section>
       <%= image_tag 'angularjs.png', class: 'angular-image' %>
       <div class='angular-input', style='width:50%'>
-        <input type="text" ng-model="value"></input>
-        <div>Hello my name is {{value}}</div>
+        <input type="text" ng-model="value", style='background-color:white;color:black'></input>
+        <div>Hello, my name is {{value}}</div>
       </div>
     </section>
     <section>
